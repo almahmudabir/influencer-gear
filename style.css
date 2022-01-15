@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
-
+/*------------ header---------- */
 .title-heading {
   font-size: 40px;
   font-family: "Mochiy Pop P One", sans-serif;
@@ -28,6 +28,8 @@ li a {
 body {
   font-family: "Poppins", sans-serif;
 }
+
+/* --------------first part---------------- */
 .container-1 {
   display: flex;
   gap: 100px;
@@ -61,6 +63,7 @@ body {
 .first-section-image:hover {
   transform: scale(1.1);
 }
+/* ------------logo part------------- */
 .container-2 {
   align-items: center;
   justify-content: center;
@@ -72,6 +75,8 @@ body {
   grid-template-columns: repeat(7, 1fr);
   width: 1100px;
 }
+
+/* ----------------third /product dsiplay part */
 .container-3 {
   width: 1100px;
   margin-left: 8%;
@@ -136,6 +141,7 @@ body {
 .see-button:hover {
   transform: translateX(5px);
 }
+/* -------------------self part------------------- */
 .self-container {
   margin: 100px;
 }
@@ -155,6 +161,9 @@ body {
   border-radius: 15px;
   color: lavender;
 }
+
+/* ----------------foooter   ----------- */
+
 footer {
   background-color: #0a0826;
   text-align: center;
@@ -163,7 +172,7 @@ footer {
   line-height: 10px;
   margin: -10px;
 }
-.copuright {
+.copyright {
   font-size: 14px;
   padding-top: 15px;
 }
@@ -189,15 +198,22 @@ footer {
 }
 
 /* responsive */
+/* media query for mobile */
 @media only screen and (max-width: 688px) {
   header nav ul {
     display: none;
+  }
+  .title-heading {
+    font-size: 25px;
+    justify-content: center;
+    align-items: center;
   }
   .container-1 {
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
     margin: 15px 15px;
+    width: 600px;
   }
   .first-section-image {
     background: none;
@@ -212,25 +228,22 @@ footer {
     width: 50%;
     margin-left: 100px;
   }
-  
-  }
+
   .products {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
     align-items: center;
   }
   .self-container {
-    width: 50%;
+    width: 600px;
     justify-content: center;
     align-items: center;
   }
-  .self{
-   
-      display: grid;
-      grid-template-columns: repeat(1, 1fr);
-      justify-content: center;
-      align-items: center;
-    
+  .self {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
   }
   .connect-links {
     display: flex;
@@ -238,15 +251,14 @@ footer {
     justify-content: center;
     align-items: center;
   }
-}
-@media only screen and (max-width: 980px) {
-  body{
-    margin-left: -20px
+  .see-more {
+    justify-content: right;
   }
-  };
+}
+/* media query for tab */
+@media only screen and (min-width: 866px) and (max-width: 980px) {
   .products {
     grid-template-columns: repeat(2, 1fr);
-    
   }
   header nav ul {
     display: none;
@@ -255,6 +267,6 @@ footer {
     display: none;
   }
   .see-more {
-    justify-content: left;
+    justify-content: center;
   }
 }
