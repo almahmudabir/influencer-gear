@@ -1,3 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap");
+
+.title-heading {
+  font-size: 40px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+nav {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+ul {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+}
+
+li a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -29,15 +56,21 @@ body {
   background-repeat: no-repeat;
   background-size: 90%;
   background-position: center;
+  transition: 0.5s ease-in-out;
+}
+.first-section-image:hover {
+  transform: scale(1.1);
 }
 .container-2 {
-  display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin: 0 24px;
-  padding: 30px 0;
+  justify-content: center;
+  margin: 1% 9%;
+  padding: 30px 25px;
   border-top: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 1100px;
 }
 .container-3 {
   width: 1150px;
@@ -116,7 +149,41 @@ body {
 .read {
   text-decoration: none;
   padding: 8px 12px;
-  background-color: indianred;
+  background-color: rgb(24, 105, 129);
   border-radius: 15px;
   color: lavender;
 }
+footer {
+  background-color: #0a0826;
+  text-align: center;
+  padding: 30px;
+  color: #ffffff;
+  line-height: 10px;
+  margin: -10px;
+}
+.copuright {
+  font-size: 14px;
+  padding-top: 15px;
+}
+.connect-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding-top: 10px;
+}
+.link {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 28px;
+
+  background-color: rgba(176, 174, 199, 0.145);
+  padding: 16px;
+  border-radius: 100%;
+  transition: 0.9s ease-in-out;
+}
+.link:hover {
+  background-color: transparent;
+  transform: scale(1.25);
+}
+
+/* responsive */
