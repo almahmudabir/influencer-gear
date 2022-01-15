@@ -5,7 +5,7 @@
   font-family: "Mochiy Pop P One", sans-serif;
 }
 nav {
-  max-width: 1200px;
+  max-width: 1100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,11 +136,13 @@ body {
 .see-button:hover {
   transform: translateX(5px);
 }
+.self-container {
+  margin: auto;
+}
 .self {
   display: flex;
-  width: 80%;
-  margin: 10%;
   gap: 50px;
+  margin: auto;
 }
 .last-heading {
   font-size: 35px;
@@ -187,3 +189,44 @@ footer {
 }
 
 /* responsive */
+@media only screen and (max-width: 865px) {
+  .container-1 {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    margin: 15px auto;
+  }
+  .first-section-image {
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container-2 {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .self {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+  }
+  .connect-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 866px) and (max-width: 980px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
