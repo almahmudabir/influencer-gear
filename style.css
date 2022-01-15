@@ -18,6 +18,11 @@ body {
   padding: 10px 24px;
   border-radius: 25px;
   box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+  transition: 0.5s ease-in;
+}
+.booking-arrow:hover {
+  transform: scale(1.01);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
 }
 .first-section-image {
   background-image: url(./influencer-gear-main/images/Circle\ design.svg);
@@ -52,12 +57,19 @@ body {
 }
 .product {
   padding: 15px;
-  display: flex;
   flex-direction: column;
-  gap: 5px;
   box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.35);
-  border-radius: 5px;
+  border-radius: 10px;
   justify-content: center;
+  margin: 0px 0px;
+  transition: 0.3s ease-in;
+}
+.product:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.15);
+}
+.product > * {
+  margin: 0px;
 }
 .product img {
   width: 100%;
@@ -78,4 +90,33 @@ body {
 .see-more {
   display: flex;
   justify-content: flex-end;
+}
+.see-button {
+  background-color: #e02c6d;
+  color: antiquewhite;
+  padding: 10px 24px;
+  border-radius: 25px;
+  box-shadow: 10px 6px 10px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+  border: none;
+}
+.see-button:hover {
+  transform: translateX(5px);
+}
+.self {
+  display: flex;
+  width: 80%;
+  margin: 10%;
+  gap: 50px;
+}
+.last-heading {
+  font-size: 35px;
+  color: rgba(37, 37, 114, 0.904);
+}
+.read {
+  text-decoration: none;
+  padding: 8px 12px;
+  background-color: indianred;
+  border-radius: 15px;
+  color: lavender;
 }
