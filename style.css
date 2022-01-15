@@ -1,0 +1,19 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+.container-1 {
+  display: flex;
+  gap: 100px;
+  padding: 0 30px 50px;
+  margin: 25px;
+}
+.first-section {
+}
+.booking-arrow {
+  text-decoration: none;
+  background-color: #e02c6d;
+  color: antiquewhite;
+  padding: 10px 24px;
+  border-radius: 25px;
+  box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.3);
+}
